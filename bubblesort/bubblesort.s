@@ -30,6 +30,7 @@ bubblesort:
 
             # pre loading
             movq (%rcx), %r9  # r9 = *(rcx)
+            
             cmpq %r9, (%rdx) # if a[j] > a[j+1]
             jg swap
             jle after_swap
