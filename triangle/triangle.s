@@ -36,7 +36,7 @@ triangle:
     while_1: # while(i!=0)
         cmpq $0, %rbx # if(i-0==0)
         je end_while_1
-        movq $0, %r10
+        movq $0, %r10 # j=0
         while_2: # while(j!=i)
             cmpq %r10, %rbx # if(i-j==0)
             je end_while_2
@@ -55,7 +55,7 @@ triangle:
             movq $0, %rsi
             movq $0, %rax
             call printf # printf("\n");
-            
+
             jmp while_1
     end_while_1:
         popq %r10
