@@ -58,6 +58,7 @@ triangle:
 
             jmp while_1
     end_while_1:
+    end1:
         popq %r10
         popq %rbx
         leave
